@@ -1,0 +1,41 @@
+{
+  "name": "@brandonfajardo/greeting-package",
+  "version": "1.0.0",
+  "main": "lib/index.cjs",
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.cjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "release-package": "npm run build && npx changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonfajardo/greeting_package.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonfajardo/greeting_package/issues"
+  },
+  "homepage": "https://github.com/brandonfajardo/greeting_package#readme",
+  "description": "",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "rollup": "^4.17.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5"
+  }
+}

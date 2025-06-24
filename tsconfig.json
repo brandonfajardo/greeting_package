@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "lib/types",
+        "target": "es6", // Transpile code to es6
+        "moduleResolution": "node"
+    },
+    "include": ["src/**/*"], // Process TS here
+    "exclude": ["node_modules", "lib"]
+}
